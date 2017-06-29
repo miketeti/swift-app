@@ -3,7 +3,7 @@
 //  Swift App
 //
 //  Created by Michael Teti on 6/29/17.
-//  Copyright © 2017 Michael Teti. All rights reserved.
+//  Copyright © 2017 Michael Teti. All rights reserved..
 //
 
 import UIKit
@@ -13,13 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var theLabel: UILabel!
 
     var tapCount = 0
-    var tapValue = "0"
+    
     @IBAction func buttonTapped(_ sender: Any) {
         tapCount = tapCount + 1
         print(tapCount)
-        if tapCount / 10 == tapCount % 10 {
-            tapValue = String(tapCount / 10)
-            theLabel.text = "You tapped the button " + tapValue + " times!"
+        if tapCount >= 10 {
+            theLabel.text = "You tapped the button 10 times!"
         }
     }
     
