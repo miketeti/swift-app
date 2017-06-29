@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pi7-kL-4fU">
-                                <rect key="frame" x="154.5" y="71" width="67" height="30"/>
+                                <rect key="frame" x="154" y="71" width="67" height="30"/>
                                 <state key="normal" title="PUSH ME"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gc1-08-WE4"/>
@@ -42,21 +42,45 @@
                                     <action selector="buttonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mnz-fc-WSN"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZW-sg-TYJ">
+                                <rect key="frame" x="137" y="109" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="efj-jM-vEq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyq-LD-Az3">
+                                <rect key="frame" x="137" y="161" width="100" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="pZW-sg-TYJ" firstAttribute="leading" secondItem="pyq-LD-Az3" secondAttribute="leading" id="0xy-m3-kvs"/>
+                            <constraint firstItem="pyq-LD-Az3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2uk-V9-X1I"/>
+                            <constraint firstItem="pyq-LD-Az3" firstAttribute="top" secondItem="pZW-sg-TYJ" secondAttribute="bottom" constant="22" id="DLL-9g-9tO"/>
+                            <constraint firstItem="pZW-sg-TYJ" firstAttribute="trailing" secondItem="pyq-LD-Az3" secondAttribute="trailing" id="EYe-IU-Tl0"/>
                             <constraint firstItem="Pi7-kL-4fU" firstAttribute="top" secondItem="MgF-n4-Djg" secondAttribute="bottom" constant="20" id="KJB-BW-OXj"/>
                             <constraint firstItem="Pi7-kL-4fU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ONY-nO-qoq"/>
+                            <constraint firstItem="pZW-sg-TYJ" firstAttribute="top" secondItem="Pi7-kL-4fU" secondAttribute="bottom" constant="8" symbolic="YES" id="VAV-Bw-gL7"/>
+                            <constraint firstItem="pyq-LD-Az3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hct-DW-n2l"/>
                             <constraint firstItem="MgF-n4-Djg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="pPy-gm-9he"/>
                             <constraint firstItem="MgF-n4-Djg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yX5-1D-G9v"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="pZW-sg-TYJ" id="34c-GO-M8g"/>
+                        <outlet property="text2" destination="pyq-LD-Az3" id="AHa-Jy-8h9"/>
                         <outlet property="theLabel" destination="MgF-n4-Djg" id="h8j-Za-Ofr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
