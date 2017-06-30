@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        let addition :Bool = false
+        let addition :Bool = true
         
         //print(text1.text!)
         //print(text2.text!)
