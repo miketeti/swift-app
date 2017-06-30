@@ -13,15 +13,27 @@ class ViewController: UIViewController {
     @IBOutlet weak var theLabel: UILabel!
     
     @IBOutlet weak var text1: UITextField!
-
+    
     @IBOutlet weak var text2: UITextField!
     
     var tapCount = 0
     
     @IBAction func buttonTapped(_ sender: Any) {
-        print(text1.text!)
-        print(text2.text!)
-        theLabel.text = "Answer: \(Int(text1.text!)! + Int(text2.text!)!)"
+        
+        let addition :Bool = false
+        
+        //print(text1.text!)
+        //print(text2.text!)
+        
+        if addition {
+            theLabel.text = "Answer: \(Int(text1.text!)! + Int(text2.text!)!)"
+        } else {
+            theLabel.text = "Answer: \(Int(text1.text!)! - Int(text2.text!)!)"
+        }
+        
+        
+        
+        
     }
     
     override func viewDidLoad() {
@@ -33,7 +45,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
