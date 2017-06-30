@@ -28,22 +28,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pi7-kL-4fU">
-                                <rect key="frame" x="154" y="71" width="67" height="30"/>
+                                <rect key="frame" x="154" y="198" width="67" height="30"/>
                                 <state key="normal" title="PUSH ME"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gc1-08-WE4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icd-8G-oMJ">
-                                <rect key="frame" x="162" y="211" width="53" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="TAP ME"/>
-                                <connections>
-                                    <action selector="buttonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mnz-fc-WSN"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZW-sg-TYJ">
-                                <rect key="frame" x="137" y="109" width="100" height="30"/>
+                                <rect key="frame" x="137" y="91" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="efj-jM-vEq"/>
                                 </constraints>
@@ -52,7 +44,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyq-LD-Az3">
-                                <rect key="frame" x="137" y="161" width="100" height="30"/>
+                                <rect key="frame" x="137" y="143" width="100" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -64,11 +56,11 @@
                             <constraint firstItem="pyq-LD-Az3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2uk-V9-X1I"/>
                             <constraint firstItem="pyq-LD-Az3" firstAttribute="top" secondItem="pZW-sg-TYJ" secondAttribute="bottom" constant="22" id="DLL-9g-9tO"/>
                             <constraint firstItem="pZW-sg-TYJ" firstAttribute="trailing" secondItem="pyq-LD-Az3" secondAttribute="trailing" id="EYe-IU-Tl0"/>
-                            <constraint firstItem="Pi7-kL-4fU" firstAttribute="top" secondItem="MgF-n4-Djg" secondAttribute="bottom" constant="20" id="KJB-BW-OXj"/>
                             <constraint firstItem="Pi7-kL-4fU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ONY-nO-qoq"/>
-                            <constraint firstItem="pZW-sg-TYJ" firstAttribute="top" secondItem="Pi7-kL-4fU" secondAttribute="bottom" constant="8" symbolic="YES" id="VAV-Bw-gL7"/>
                             <constraint firstItem="pyq-LD-Az3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hct-DW-n2l"/>
+                            <constraint firstItem="pZW-sg-TYJ" firstAttribute="top" secondItem="MgF-n4-Djg" secondAttribute="bottom" constant="40" id="jtQ-db-PqY"/>
                             <constraint firstItem="MgF-n4-Djg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="pPy-gm-9he"/>
+                            <constraint firstItem="Pi7-kL-4fU" firstAttribute="top" secondItem="pyq-LD-Az3" secondAttribute="bottom" constant="25" id="y1k-oe-fIb"/>
                             <constraint firstItem="MgF-n4-Djg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yX5-1D-G9v"/>
                         </constraints>
                     </view>
