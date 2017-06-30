@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: Any) {
         print(text1.text)
         print(text2.text)
+        //theLabel.text = String(Int(text1.text!)! + Int(text2.text!)!)
+        theLabel.text = "Answer: \(Int(text1.text!)! + Int(text2.text!)!)"
     }
     
     @IBAction func buttonTapped2(_ sender: Any) {
